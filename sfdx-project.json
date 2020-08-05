@@ -1,8 +1,24 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
-      "default": true
+      "path": "./es-base-objects",
+      "package": "ESObjects",
+      "versionName": "Base Objects - Spring '20",
+      "versionNumber": "4.0.0.NEXT",
+      "default": false
+    },
+    {
+        "path": "./es-base-styles",
+        "package": "ESBaseStylesLWC",
+        "versionName": "Base Styles LWC - Spring '20",
+        "versionNumber": "4.0.0.NEXT",
+        "default": true,
+        "dependencies": [
+            {
+                "package": "ESObjects",
+                "versionNumber": "4.0.0.LATEST"
+            }
+        ]
     }
   ],
   "namespace": "",
